@@ -6,139 +6,7 @@
 
     <title>2 col layout</title>
 
-    <style>
-        body{
-            background-color:lightblue;
-            color: darkslategrey;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14pt;
-        }
-        header {
-            background-color: darkkhaki;
-            height: 110px;
-        }
-        img {
-            height: 100px;
-            width: 100px;
-            float:left;
-            padding: 5px;
-        }
-        .mainSection {
-            background-color: #eed9c4;
-            min-height: 300px;
-            width: 70%;
-            float: right;
-            padding: 5%;
-        }
-
-        aside {
-            background-color: beige;
-            height: 500px;
-            width: 20%;
-            float: left;
-        } 
-        .button{
-            height: 50px;
-            width: 100%;
-        }
-        footer {
-            background-color:darkkhaki;
-            height: 100px;
-            clear: both;
-        }
-        table{
-            text-align: center;
-            font-family: Helvetica;
-            border: 3px solid black;
-            border-collapse: collapse;
-            
-        }
-        td,th {
-            text-align: right;
-            font-family: Consolas;
-            border: 2px solid black;
-            Padding: 4px;
-        }
-
-        .title {
-            font-weight: lighter;
-            font-size: 40pt;
-            text-align: center;
-            padding: 22px;
-            color: navy;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }     
-        .navBar {
-            display: none;
-        }
-        /*.navButton {
-            display: none;
-        }*/
-        
-        /* break point 800px or fewer*/
-        @media only screen and (max-width: 1000px) {
-            body{
-                background-color: lightblue;
-            }
-            .navBar {
-                display: inline;
-                margin: 0px;
-                padding: 0px;
-            }
-            .navButton{
-                width: 25%;
-                border: 2px;
-                margin: 0px;
-                padding: 1vw;
-                float:left;
-                font-size:3vw;
-                
-            }
-            img {
-                height: 10vw;
-                width: 10vw;
-                padding:1vw
-            }
-
-            header{
-                height:12vw;
-            }
-
-            aside{
-                display: none;
-            }
-            .mainSection{
-                width: 90%;
-            }
-            .title{
-                font-size: 5.5vw;
-            }
-            .container {
-                width: 95%;
-            }
-        }
-         
-        @media only screen and (max-width: 800px) {
-            body{
-                background-color: red;
-            }
-            header{
-                height: 24vw;
-            }
-            img{
-                width: 20vw;
-                height: 20vw;
-                padding: 2vw;
-            }
-            .title{
-                font-size: 8vw;
-                padding:2.5vw
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -151,7 +19,8 @@
 
         <aside>
             <form>
-                <input class="button" type="button" onclick="window.location.href = 'home.html';" value="Home"/><input class="button" type="button" onclick="window.location.href = 'we_are_great.html';" value="We Are Great!"/>
+                <input class="button" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+                <input class="button" type="button" onclick="window.location.href = 'we_are_great.html';" value="We Are Great!"/>
                 <input class="button" type="button" onclick="window.location.href = 'vacancies.html';" value="Vacancies"/>
                 <input class="button" type="button" onclick="window.location.href = 'contact.html';" value="Contact"/>
             </form>
@@ -160,7 +29,7 @@
 
         <section class="navBar">
             <form>
-                <input class="navButton" type="button" onclick="window.location.href = 'home.html';" value="Home"/>
+                <input class="navButton" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
                 <input class="navButton" type="button" onclick="window.location.href = 'we_are_great.html';" value="We Are Great!"/>
                 <input class="navButton" type="button" onclick="window.location.href = 'vacancies.html';" value="Vacancies"/>
                 <input class="navButton" type="button" onclick="window.location.href = 'contact.html';" value="Contact"/>

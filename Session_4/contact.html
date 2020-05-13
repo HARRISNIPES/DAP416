@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2 col layout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="logo.png"/>
+            <h1 class="title">PRESTIGE WORLDWIDE</p>
+        </header>
+
+        <aside>
+            <form>
+                <input class="button" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+                <input class="button" type="button" onclick="window.location.href = 'we_are_great.html';" value="We Are Great!"/>
+                <input class="button" type="button" onclick="window.location.href = 'vacancies.html';" value="Vacancies"/>
+                <input class="button" type="button" onclick="window.location.href = 'contact.html';" value="Contact"/>
+            </form>
+
+        </aside>
+
+        <section class="navBar">
+            <form>
+                <input class="navButton" type="button" onclick="window.location.href = 'index.html';" value="Home"/>
+                <input class="navButton" type="button" onclick="window.location.href = 'we_are_great.html';" value="We Are Great!"/>
+                <input class="navButton" type="button" onclick="window.location.href = 'vacancies.html';" value="Vacancies"/>
+                <input class="navButton" type="button" onclick="window.location.href = 'contact.html';" value="Contact"/>
+             </form>
+        </section>
+
+        <section class="mainSection">
+            <h2>Contact Us</h2>
+            <p>If you'd like to contact us about investing in our business fill out the form below and we'll get back to you as soon as possible.</p> 
+            <form method="post">
+                <p>
+                    <label for="contactForm">Full Name: <input autofocus type="text" name="name"/></label>
+                </p>
+                <p>
+                    <label for="contactForm"> Email Address: <input type="email" name="email"/></label>
+                </p>
+                <p>
+                    <label for="contactForm"> Your Query: <textarea id="query" name="query" placeholder="Ask your question here..." rows="10" cols="30"></textarea></label>
+                </p>
+                <p>
+                    <label for="contactForm">
+                        <span>Query Type:</span>
+                        <input type="radio" name="queryType" value="Investment"/>
+                            <span>Investment</span>
+                        <input type="radio" name="queryType" value="Media Interview"/>
+                            <span>Media Interview</span>
+                        <input type="radio" name="queryType" value="Job Application"/>
+                            <span>Job Application</span>
+                    </label>
+                </p>
+                <p>
+                    <label for="contactForm">
+                        <span>By checking this box you agree to our <a href="t_and_cs.html" target="_blank">T&Cs</a></span>
+                        <input type="checkbox" name="tandc"/>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="submit" href="index.html" target="_self">
+                    </label>
+                </p>
+            </form>   
+        </section>
+
+        <footer>
+            <p>footer</p> 
+        </footer>
+    </div>
+</body>
+
+</html>
