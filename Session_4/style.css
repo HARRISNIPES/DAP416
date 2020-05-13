@@ -72,6 +72,16 @@
         .navBar {
             display: none;
         }
+        .fullName {
+            margin-left: 55px;
+        }
+        .emailAddress {
+            margin-left: 20px;
+        }
+        .query {
+            margin-left: 47px;
+        }
+        
         /*.navButton {
             display: none;
         }*/
@@ -117,6 +127,9 @@
             }
             .container {
                 width: 95%;
+            }
+            .expenditure, .turnover {
+                float: none;
             }
         }
          
