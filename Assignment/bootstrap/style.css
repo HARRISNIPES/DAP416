@@ -1,12 +1,12 @@
-        body{
-            background-color:lightblue;
-            color: darkslategrey;
-            font-family: Arial, Helvetica, sans-serif;
+      
+      html, body{
+            background-color:#388DED;
+            color: white;
             font-size: 18px;
+            font-family: Calibri;/*, Helvetica, sans-serif;*/
         }
-        header {
-            background-color: darkkhaki;
-            height: 110px;
+        #r1 {
+            height: 200px;
         }
         aside {
             background-color: beige;
@@ -14,11 +14,47 @@
             width: 20%;
             float: left;
         }
-        .logo {
-            height: 100px;
-            width: 100px;
-            float:left;
-            padding: 5px;
+        #logo {
+            align-self: center;
+            font-family: 'Times New Roman', Times, serif;
+            max-width: 350px;
+            padding-top: 20px;
+            margin-left: -20px;
+            /*from: https://stackoverflow.com/questions/11839655/is-it-possible-to-adjust-a-fonts-vertical-scaling-using-css*/
+            -webkit-transform: scale(1.25, 1); /* Safari and Chrome */
+            -moz-transform: scale(1.25, 1); /* Firefox */
+            -ms-transform: scale(1.25, 1); /* IE 9+ */
+            -o-transform: scale(1.25, 1); /* Opera */
+            transform-origin: top left; 
+        }
+        #logo h1{
+            background-color: white;
+            color: #fb0007;
+            font-weight: 900;
+            text-align: center;
+            font-size: 56px;
+        }
+        #contact{
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            /* margin-left: 880px; */
+            /* padding-left: 300px; */
+            margin-bottom: -40px;
+        }
+        #contact a:link{
+            float: right;
+            color: white;
+            text-decoration: none;
+        }
+        #contact a:hover{
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+        #brief{
+            padding-bottom: 80px;
+            padding-left: -15px;
+            vertical-align: top;
         }
         .mainsection {
             background-color: #eed9c4;
@@ -71,13 +107,6 @@
         .expenditure {
             float: right;
         }
-        h1 {
-            font-weight: lighter;
-            font-size: 38px;
-            text-align: center;
-            padding-top: 36px;
-            color: navy;
-        }
         .container {
             width: 80%;
             margin: 0 auto;
@@ -98,7 +127,7 @@
         .query {
             margin-left: 47px;
         }
-        /* break point 800px or fewer*/
+        /* break point 800px or fewer
         @media only screen and (max-width: 800px) {
             .navbar {
                 display: inline;
@@ -149,7 +178,7 @@
             }
             .expenditure, .turnover {
                 float: none;
-            }
+            }*/
         }
          
         @media only screen and (max-width: 500px) {

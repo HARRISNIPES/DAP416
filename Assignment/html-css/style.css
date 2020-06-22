@@ -1,0 +1,85 @@
+body, html{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html{
+    font-family: Calibri, Arial;
+}
+#logo{
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: #fb0007;
+    /*from: https://stackoverflow.com/questions/11839655/is-it-possible-to-adjust-a-fonts-vertical-scaling-using-css*/
+    -webkit-transform: scale(1.25, 1); /* Safari and Chrome */
+    -moz-transform: scale(1.25, 1); /* Firefox */
+    -ms-transform: scale(1.25, 1); /* IE 9+ */
+    -o-transform: scale(1.25, 1); /* Opera */
+    transform-origin: top left; 
+    flex: 0 1 auto;
+}
+#navbar{
+    display: flex;
+    flex: 0 1 1000px;
+    /* position: fixed; */
+    margin: -13px 0px 0px 0%;   
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white; 
+    /* margin: 0px 15px; */
+    padding: 31px 70px 31px 70px;
+    flex: 1 1 140px;
+    background-color: slategray;
+}
+#navbar a:hover{
+    opacity: 0.7;
+    background-color: limegreen;
+    color: mediumblue;
+}
+
+.header{
+    display: flex;
+    height: 80px;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    text-align: right;
+    line-height: 80px;
+}
+.main{
+    background-color: mediumblue;
+    width: 60%;
+    height: 1800px;
+    text-align: center;
+    margin: 20px 20% 20px 20%;
+}
+footer{
+    background-color: yellow;
+    width: 100%;
+    height: 60px;
+}
+@media all and (max-width: 912px){
+    #navbar{
+        text-align: center;
+        width: 100%;
+
+    }
+
+    #navbar a{
+        display: block;
+        border: black;
+        margin:0;
+    }
+    .main{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+} 

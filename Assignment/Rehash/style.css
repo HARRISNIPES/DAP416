@@ -1,31 +1,59 @@
         body{
             background-color:lightblue;
+            background-image: url("computer-3163436.svg");
+            /* background-attachment: fixed; */
             color: darkslategrey;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
         }
         header {
-            background-color: darkkhaki;
+            display: flex;
+            fill-opacity: 90%;
+            background-color: white;
+            border: 2px solid navy;
+            border-radius: 30px 30px 0px 0px;
+            width: 100%;
             height: 110px;
+            margin: 20px 0px 20px 0px;
         }
         aside {
-            background-color: beige;
+            background-color: whitesmoke;
+            border: 2px solid navy;
+            border-radius: 0px 0px 0px 30px;
             height: 500px;
-            width: 20%;
+            width: 200px;
+            margin-right: 20px;
             float: left;
+            flex: 1 1 200px;
         }
-        .logo {
+        #logo{
+            padding-left: 20px;
+            align-self: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            text-align: left;
+            font-size: 56px;
+            color: #fb0007;
+            /*from: https://stackoverflow.com/questions/11839655/is-it-possible-to-adjust-a-fonts-vertical-scaling-using-css*/
+            -webkit-transform: scale(1.25, 1); /* Safari and Chrome */
+            -moz-transform: scale(1.25, 1); /* Firefox */
+            -ms-transform: scale(1.25, 1); /* IE 9+ */
+            -o-transform: scale(1.25, 1); /* Opera */
+            transform-origin: top left; 
+        }
+        /* .logo {
             height: 100px;
             width: 100px;
             float:left;
             padding: 5px;
-        }
+        } */
         .mainsection {
-            background-color: #eed9c4;
+            background-color: lightgrey;
             min-height: 300px;
-            width: 70%;
+            width: 800px;
             float: right;
             padding: 5%;
+            flex: 1 1 800px;
         }
         aside ul a{
             text-decoration: none;
@@ -33,8 +61,8 @@
         /* roger is editing... */
         aside ul li{
             height: 30px;
-            color: black;
-            background-color:lightgrey;
+            color: whitesmoke;
+            background-color: #378DEC;
             text-align: center;
             /*width: 100%; */
             padding-top: 6px;
@@ -71,14 +99,14 @@
         .expenditure {
             float: right;
         }
-        h1 {
+        .logo {
             font-weight: lighter;
             font-size: 38px;
             text-align: center;
             padding-top: 36px;
-            color: navy;
         }
         .container {
+            display: block;
             width: 80%;
             margin: 0 auto;
         }     
@@ -124,11 +152,6 @@
                 background-color: slategrey;
                 color: snow;
             }
-            .logo {
-                height: 12vw;
-                width: 12vw;
-                padding:1vw
-            }
 
             header{
                 height:14vw;
@@ -140,7 +163,7 @@
             .mainsection{
                 width: 90%;
             }
-            h1{
+            #logo{
                 padding-top: 3vw;
                 font-size: 6vw;
             }
@@ -156,7 +179,7 @@
             header{
                 height: 24vw;
             }
-            .logo{
+            #logo{
                 width: 20vw;
                 height: 20vw;
                 padding: 2vw;
