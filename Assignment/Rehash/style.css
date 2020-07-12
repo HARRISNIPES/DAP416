@@ -378,7 +378,16 @@ footer {
 }
 /* break point 800px or fewer*/
 @media only screen and (max-width: 800px) {
-    
+    #productimg{
+        margin: auto;
+        padding: auto;
+    }
+    #prodhead{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    #prodhead h2{
+        font-size: 25px;
+    }
     .opt1, .opt2{
         max-width:6em;
         min-width: 6em;
