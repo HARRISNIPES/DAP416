@@ -382,6 +382,9 @@ footer {
         margin: auto;
         padding: auto;
     }
+    #gridchoice{
+    border: solid 2px black;
+    }
     #prodhead{
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
