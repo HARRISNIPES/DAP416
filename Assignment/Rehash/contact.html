@@ -13,69 +13,83 @@
 <body>
     <div class="container">
         <header>
-            <img src="logo.png" class="logo"/>
-            <h1 class="title">PRESTIGE WORLDWIDE</p>
+            <h1 id="logo"><a href="index.html">Testemp Ltd</a></h1>
+            <div id="contact">
+                <p><a href="tel:+441903714140">Call: +44 (0) 1903 714140</a>
+                    <br><a href="tel:+441903717435">Fax: +44 (0) 1903 717435</a>
+                    <br><a href="mailto:sales@testemp.co.uk?subject=Web enquiry">Email: sales@testemp.co.uk</a></p>
+            </div>
         </header>
+        <section class="flextainer">
+            <aside>
+                <ul class="menu">
+                    
+                        <li><a href="index.html" >Home
+                            <ul id="drpdn">
+                                <li><a href="sensors.html" id="trouble">Sensors</a></li>
+                                <li><a href="err404.html">Thermowells, Fittings and Transmitters</a></li>
+                                <li><a href="err404.html">Cable</a></li>
+                                <li><a href="err404.html">Instrumentation</a></li>
+                                <li><a href="err404.html">Connectors</a></li>
+                                <li><a href="err404.html">Info</a></li>
+                            </ul></a>
+                        </li>
+                    
+                    
+                        <li><a href="err404.html">About</a></li>
+                    
+                    
+                        <li><a href="err404.html">Associates</a></li>
+                    
+                    
+                        <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </aside>
 
-        <aside>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="we_are_great.html"><li>We are great!</li></a>
-                <a href="vacancies.html"><li>Vacancies</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </aside>
 
-        <section class="navbar">
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="we_are_great.html"><li>We are great!</li></a>
-                <a href="vacancies.html"><li>Vacancies</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-            </ul>
-        </section>
 
-        <section class="mainsection">
-            <h2>Contact Us</h2>
-            <p>If you'd like to contact us about investing in our business fill out the form below and we'll get back to
-                you as soon as possible.</p>
-            <form method="post">
-                <p>
-                    <label for="contactform">Full Name: <input autofocus class="fullname" type="text"
-                            name="name" size="30" /></label>
+            <section class="mainsection contactform">
+                <h2>Contact Us</h2>
+                <p>If you'd like to contact us please fill out the form below or use our details found above. <br>Alternatively, you can share your experience or ask any question through our social media.</p>
+                <form method="post">
+                    <p>
+                        <label for="contactform"><br>Full Name:<input autofocus class="fullname" type="text" name="name"
+                                 /></label>
                     </p>
-                <p>
-                    <label for="contactform"> Email Address: <input class="emailaddress" type="email"
-                            name="email" size="30"/></label>
-                </p>
-                <p>
-                    <label for="contactform"> Your Query: <textarea class="query" id="query" name="query"
-                            placeholder="Ask your question here..." rows="10" cols="29"></textarea></label>
-                </p>
-                <p>
-                    <label for="contactform">
-                        <span>Query Type:</span>
-                        <input type="radio" name="queryType" value="Investment" />
-                        <span>Investment</span>
-                        <input type="radio" name="queryType" value="Media Interview" />
-                        <span>Media Interview</span>
-                        <input type="radio" name="queryType" value="Job Application" />
-                        <span>Job Application</span>
-                    </label>
-                </p>
-                <p>
-                    <label for="contactform">
-                        <span>By checking this box you agree to our <a href="t_and_cs.html"
-                                target="_blank">T&Cs</a></span>
-                        <input type="checkbox" name="tandc" />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="submit" href="index.html" target="_self">
-                    </label>
-                </p>
-            </form>
+                    <p>
+                        <label for="contactform"> Email Address: <input class="emailaddress" type="email" name="email"
+                                /></label>
+                    </p>
+                    <p>
+                        <label for="contactform"> Your Query:<textarea class="query" id="query" name="query"
+                                placeholder="Ask your question here..."></textarea></label>
+                    </p>
+                    <p>
+                        <label for="contactform">
+                            <span>Query Type:</span>
+                            <input type="radio" name="queryType" value="purchase" />
+                            <span>Purchase</span>
+                            <input type="radio" name="queryType" value="techsupport" />
+                            <span>Technical Support</span>
+                            <input type="radio" name="queryType" value="generalquery" />
+                            <span>General Query</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="contactform">
+                            <span>By checking this box you agree to our <a href="t_and_cs.html"
+                                    target="_blank">T&Cs</a></span>
+                            <input type="checkbox" required name="tandc" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="submit" href="index.html" target="_self">
+                        </label>
+                    </p>
+                </form>
+            </section>
         </section>
 
         <footer>
@@ -83,5 +97,7 @@
         </footer>
     </div>
 </body>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&display=swap" rel="stylesheet">
 
 </html>
