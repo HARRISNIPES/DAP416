@@ -383,7 +383,8 @@ footer {
         padding: auto;
     }
     #gridchoice{
-    border: solid 2px black;
+        border: solid 3px black;
+        margin: auto;
     }
     #prodhead{
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -410,7 +411,7 @@ footer {
         padding: 0 .5rem;
         min-width: 320px;
         width: min-content;
-        margin: 0 auto 2rem 0;
+        margin: 0 auto 2rem auto;
     }
     .flextainer{
         flex-direction: column;
