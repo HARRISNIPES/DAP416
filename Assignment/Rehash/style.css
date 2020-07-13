@@ -48,6 +48,9 @@ header {
     height: fit-content;
 }
 
+#info{
+    padding:2rem;
+}
 .maingrid{
     text-align: center;
     display: grid;
@@ -203,12 +206,6 @@ aside ul{
     margin: -10px;
 }
 
-footer {
-    background-color:darkgrey;
-    height: 100px;
-    clear: both;
-}
-
 .flextainer{
     display: flex;
     width: 100%;
@@ -244,13 +241,26 @@ footer {
 }
 
 .contactform {
-    padding: 2rem;
+    padding: 0 2rem;
+    grid-row: 1;
+    grid-column: 1;
 }
 
 #product{
     display: grid;
     grid-template-columns: repeat(1, minmax(1fr, 1fr));
     width: fit-content;
+}
+#contactgrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-rows: 2;
+}
+
+#map{
+    grid-row: auto;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 #prodhead{ 
     padding: 0 4rem;
@@ -367,6 +377,35 @@ footer {
     padding:8px;
     margin: auto;
 }
+
+footer {
+    background-color:darkgrey;
+    height: fit-content;
+    padding: 1rem .1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, minmax(10%, 20%));
+    text-align: center;
+}
+
+footer i{
+    grid-row: 1;
+    font-size: 3rem;
+    color: #42445a;
+    text-align: center;
+}
+
+footer p{
+    /* min-width: 32em; */
+    overflow-wrap: break-word;
+    grid-row: 2;
+    grid-column: span 3;
+}
+
 @media only screen and (max-width: 1050px) {
     .maingrid {
         grid-template-columns: repeat(2, minmax(40%, 1fr));
@@ -409,7 +448,7 @@ footer {
     }
     #gridinfo{
         padding: 0 .5rem;
-        min-width: 320px;
+        min-width: 310px;
         width: min-content;
         margin: 0 auto 2rem auto;
     }
@@ -479,11 +518,11 @@ footer {
 
 
 @media only screen and (max-width: 500px) {
-    #logo{
-        /* font-size: 40px; */
-    }
     .container{
         width:95%;
+    }
+    #info{
+        padding: 1rem;
     }
     aside ul a li{
         /* font-size: 16px; */
